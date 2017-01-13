@@ -1,0 +1,33 @@
+{
+  "name": "node_response",
+  "version": "1.0.0",
+  "description": "Test node application for printing url request and it's details like body, file and header in node terminal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ERbittuu/node_response.git"
+  },
+  "keywords": [
+    "node",
+    "response",
+    "request",
+    "body",
+    "file",
+    "parameters"
+  ],
+  "author": "Utsav Patel",
+  "license": "MIT"
+  "bugs": {
+    "url": "https://github.com/ERbittuu/node_response/issues"
+  },
+  "homepage": "https://github.com/ERbittuu/node_response#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-fileupload": "0.0.5",
+    "url": "^0.11.0"
+  }
+}
