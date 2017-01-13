@@ -6,11 +6,11 @@ To run the example project, clone the repo, and run `npm install` from app direc
 
 ## Requirements
 
-NodeJs latest vesrion  
+Node latest vesrion
 
-## usge
+## Usge
 
-This app will run on 3000 port by default, and it will print all POST, PUT, DELETE, GET request information like body parameters, urls parameters, request headers and attected file details  
+This app will run on 3000 port by default, and it will print all POST, PUT, DELETE, GET request information like body parameters, urls parameters, request headers and attected file details. 
 
 ## Installation
 
