@@ -16,8 +16,8 @@ var server = app.listen(3000, function () {
 
 var startLine  = endLine = "---------------------------------------------------"
 
-// test get request
-app.get("/Test/", function (req, res) {
+// Handle get request type 
+app.get("/user", function (req, res) {
   console.log(startLine);
 
   console.log("New Request GET received");
@@ -40,8 +40,8 @@ app.get("/Test/", function (req, res) {
   res.json(query);
 });
 
-// test post request
-app.post('/Test/', function (req, res) {
+// Handle post request type
+app.post('/user', function (req, res) {
   console.log(startLine);
 
   console.log("New Request POST received");
@@ -68,8 +68,8 @@ app.post('/Test/', function (req, res) {
 });
 
 
-// test put request
-app.put('/Test/', function (req, res) {
+// Handle put request type
+app.put('/user', function (req, res) {
   console.log(startLine);
 
   console.log("New Request PUT received");
@@ -95,8 +95,8 @@ app.put('/Test/', function (req, res) {
   res.json(req.body);
 });
 
-// test delete request
-app.delete("/Test/", function (req, res) {
+// Handle delete request type.
+app.delete("/user", function (req, res) {
   console.log(startLine);
 
   console.log("New Request DELETE received");
@@ -119,7 +119,7 @@ app.delete("/Test/", function (req, res) {
   res.json(query);
 });
 
-// not found error 
+// Anonymous request found.
 app.use(function(req, res, next){
   res.status(404);
 
