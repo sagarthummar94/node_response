@@ -118,3 +118,17 @@ app.delete("/Test/", function (req, res) {
   // return query data
   res.json(query);
 });
+
+// not found error 
+app.use(function(req, res, next){
+  res.status(404);
+
+  // respond with json
+  if (req.accepts('json')) {
+    res.send({ error: '404 not found' , url : req.url });
+    return;
+  }
+
+  // default to plain-text. send()
+  res.type('txt').send('Not found');
+});
